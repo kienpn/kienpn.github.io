@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* tạo lớp đen phủ lên */
+
+.carousel::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.6), #00000000, rgba(0, 0, 0, 0.6));
+}
+
+h2.myCaptionH {
+    font-weight: 400;
+    font-size: 45px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+p.myCaptionP {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 15;
+}
+
+a.btn.btn-outline-secondary.myCarouselBtn {
+    border: 2px solid white;
+    border-radius: 0;
+    color: #ffffffd1;
+}
+
+a.btn.btn-outline-secondary.myCarouselBtn:hover {
+    background-color: white;
+    color: #04233e;
+}
+
+body,
+html,
+banner {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* nav.navbar.navbar-expand-sm.navbar-dark.fixed-top.myNavbar {
+    padding-top: 50px;
+} */
+
+li.nav-item {
+    padding-right: 15px;
+    margin: auto;
+}
+
+ul.navbar-nav.mt-2.mt-lg-0.myNavbarUl {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+nav.navbar.dockNavbar {
+    opacity: 0;
+}
+
+.navbar .navbar-brand {
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+}
+
+.smallLogo {
+    height: 30px;
+    transition-duration: 0.4s;
+    /* transition-delay: 0.4s; */
+}
+
+.smallLogo2 {
+    height: 90px;
+    /* visibility: hidden; */
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    transition-duration: 0.4s;
+    /* transition-delay: 0.4s; */
+}
+
+@media (min-width: 576px) {
+    nav.navbar.dockNavbar {
+        position: fixed;
+        margin-top: 0!important;
+        background: #007da0;
+        transition: 0.4s;
+        padding: 0;
+        opacity: 1;
+    }
+    .dockNavbar .smallLogo {
+        /* visibility: hidden; */
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    .dockNavbar .smallLogo2 {
+        /* visibility: visible; */
+        opacity: 1;
+        transform: translateY(-50px);
+    }
+}
+
+
+/* nav.navbar.navbar-expand-sm.navbar-dark.fixed-top.mt-5.dockNavbar {
+    position: fixed;
+    margin-top: 0!important;
+    background: #007da0;
+    transition: 0.4s;   
+    padding: 0;
+} */
+
+
+/* .navbar-nav .nav-item .nav-link:hover {
+    color: rgb(40 33 33 / 80%);
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: 0.1s;
+} */
+
+
+/* end banner */
+
+.content {
+    background-color: #eff1f5;
+}
+
+h2.centerTittle {
+    font-weight: 300;
+    font-size: 40px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+/* end center block */
+
+.card-deck .card {
+    border-radius: 0;
+}
+
+
+/* .card .card-text {
+    height: 80px;
+} */
+
+hr.btnSeparator {
+    padding: 0;
+    margin: 0;
+}
+
+.card-body.btnBlock {
+    padding-top: 0;
+}
+
+.btn.btn-outline-secondary.text-left.transparentBtn {
+    border: unset;
+    /* color: gray; */
+    /* display: block; */
+    /* width: 90%; */
+    /* border-bottom: 1px solid rgba(128, 128, 128, 0.5); */
+    border-radius: 0;
+    /* text-align: left; */
+    /* margin: 5px 10px 0px; */
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.btn.btn-outline-secondary.text-left.transparentBtn::after {
+    content: ">";
+    position: absolute;
+    right: 30px;
+    color: black;
+    font-weight: 500;
+}
+
+.btn.btn-outline-secondary.text-left.transparentBtn:hover {
+    border: unset;
+    color: black;
+    font-weight: 500;
+    background-color: transparent;
+    /* border-bottom: 1px solid rgba(128, 128, 128, 0.5); */
+}
+
+.btn.btn-outline-secondary.text-left.transparentBtn:focus {
+    box-shadow: unset;
+}
+
+.btn.btn-outline-secondary.text-left.transparentBtn:active {
+    color: unset;
+    background-color: transparent;
+    box-shadow: unset;
+}
+
+.card-body.priceTag {
+    background-color: #f9f9f9;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+/* end card decks */
+
+.horiCard {
+    border-bottom: 2px solid rgba(128, 128, 128, 0.5);
+    border-right: 2px solid rgba(128, 128, 128, 0.5);
+    background-color: #ffffff;
+    margin-right: 15px;
+    margin-left: 15px;
+    display: flex;
+    text-decoration: none;
+    overflow: auto;
+}
+
+.horiCard:hover {
+    text-decoration: none;
+    /* border-top: 2px solid rgba(128, 128, 128, 0.5);
+    border-left: 2px solid rgba(128, 128, 128, 0.5);
+    border-bottom: none;
+    border-right: none; */
+    /* letter-spacing: 0.3px;
+    transition: 0.1s; */
+}
+
+.squareImgContainer {
+    padding: 0;
+    position: relative;
+    /* width: 116px;
+    height: 116px; */
+    overflow: hidden;
+}
+
+.squareImgContainer .squareImg {
+    margin: auto;
+    transition: 0.4s;
+}
+
+.horiCard:hover .squareImgContainer .squareImg {
+    transform: scale(1.2);
+}
+
+.squareImgContainer::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 15);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    opacity: 0;
+}
+
+.squareImgContainer .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: 0.4s;
+    opacity: 0;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    padding: 5px;
+}
+
+.horiCard:hover .squareImgContainer::before {
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.horiCard:hover .btn {
+    opacity: 1;
+    background-color: white;
+    color: black;
+    z-index: 2;
+}
+
+.horiCard h5,
+h6 {
+    padding-top: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: black;
+}
+
+.horiCard p {
+    color: black;
+}
+
+
+/* end content */
+
+.smallText p {
+    font-size: 12px;
+}
+
+.smallText a {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
+/* end web info */
+
+.footer i.fab {
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+.footer i.fab.fa-facebook {
+    color: #1877f2;
+}
+
+.footer i.fab.fa-twitter {
+    color: #2daae2;
+}
+
+.footer i.fab.fa-instagram {
+    color: #08577f;
+}
+
+.footer i.fab.fa-linkedin {
+    color: #0272b1;
+}
+
+
+/* end footer */
+
+@media (max-width: 576px) {
+    * {}
+    img.smallLogo {
+        height: 25px;
+    }
+    /* .dockNavbar .smallLogo {
+    visibility: visible;
+}
+.dockNavbar .smallLogo2 {
+    visibility: hidden;
+} */
+    a.navbar-brand {}
+    button.navbar-toggler.d-lg-none {
+        border-radius: 0;
+        border: 1px solid;
+    }
+    i.fa.fa-bars {}
+    li.nav-item {
+        /* border-bottom: 1px solid #ffffff12; */
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #ffffff24;
+    }
+    nav.navbar.navbar-expand-sm {
+        background-color: #202036;
+        margin-top: 0!important;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        /* position: unset; */
+    }
+    .carousel {
+        top: 50px;
+    }
+    .carousel-caption {
+        position: unset;
+        bottom: 20px;
+        /* z-index: 10; */
+        padding-top: 10px;
+        padding-bottom: 20px;
+        background-color: #007da0;
+        margin-bottom: 20px;
+        /* height: 160px; */
+    }
+    p.myCaptionP {
+        font-size: 14px;
+    }
+    h2.myCaptionH {
+        font-size: 25px;
+    }
+    .carousel-indicators {
+        top: 170px;
+        /* position: fixed; */
+    }
+    .carousel::before {
+        display: none;
+    }
+}
